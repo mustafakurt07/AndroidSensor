@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/pardus"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/btnSarj"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="178dp"
+        android:layout_marginBottom="514dp"
+        android:background="#FF5722"
+        android:text="ŞARJ"
+        app:layout_constraintBottom_toTopOf="@+id/btnBataryaGrafik"
+        app:layout_constraintEnd_toStartOf="@+id/btnTemp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnTemp"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="514dp"
+        android:background="#F44336"
+        android:text="SICAKLIK"
+        app:layout_constraintBottom_toTopOf="@+id/btnCiziktir"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btnSarj"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tvInfo2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="46dp"
+        app:layout_constraintStart_toEndOf="@+id/btnSarj"
+        app:layout_constraintTop_toBottomOf="@+id/btnSarj" />
+
+    <Button
+        android:id="@+id/btnCiziktir"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="5dp"
+        android:background="#00BCD4"
+        android:text="SICAKLIK GRAFİK"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btnBataryaGrafik"
+        app:layout_constraintTop_toBottomOf="@+id/btnTemp" />
+
+    <Button
+        android:id="@+id/btnBataryaGrafik"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="178dp"
+        android:layout_marginBottom="5dp"
+        android:background="#3F51B5"
+        android:text="BATARYA GRAFİK"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btnCiziktir"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnSarj" />
+</androidx.constraintlayout.widget.ConstraintLayout>
